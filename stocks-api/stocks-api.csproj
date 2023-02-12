@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>stocks_api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="ch1seL.JStreamAsyncExtensions.Newtonsoft" Version="1.0.5" />
+    <PackageReference Include="JsonConverter.Newtonsoft.Json" Version="0.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNet.Cors" Version="5.2.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="json\" />
+    <None Remove="model\" />
+    <None Remove="JsonConverter.Abstractions" />
+    <None Remove="ch1seL.JStreamAsyncExtensions.Newtonsoft" />
+    <None Remove="JsonConverter.Newtonsoft.Json" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Microsoft.AspNet.WebApi.Cors" />
+    <None Remove="Microsoft.AspNet.Cors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="json\" />
+    <Folder Include="models\" />
+  </ItemGroup>
+</Project>
